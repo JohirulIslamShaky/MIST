@@ -1,0 +1,241 @@
+/*========================*/
+/*BASIC SETUP*/
+/*========================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+
+/*========================*/
+/*REUSABLE COMPONENTS*/
+/*========================*/
+
+
+
+
+/*========================*/
+/*HEADER SECTIION*/
+/*========================*/
+#headerSection {
+    border-bottom: 1px solid #899391;
+}
+
+.uk-sticky-fixed {
+    border-bottom: 2px solid #f0ed1d;
+    background: #2d7aa8 !important;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    margin-left: 50px;
+    font-size: 35px;
+    padding: 0;
+    text-shadow: 3px 3px 3px #1bcea4;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#headerSection .navbar-dark .navbar-nav .active {
+    color: #1ddfdf;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(48, 229, 83, 0.99);
+}
+
+/*========================*/
+/*BODY SECTIION*/
+/*========================*/
+
+/*carousel slider*/
+#sliderSection .carousel-inner .overlay1 {
+    background: linear-gradient(#00000082, #00000078), url("../img/hero_1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+#sliderSection .carousel-inner .overlay2 {
+    background: linear-gradient(#000000a6, #000000a6), url("../img/hero_2.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+#sliderSection .carousel-inner .overlay3 {
+    background: linear-gradient(#00000082, #00000078), url("../img/hero_3.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.carousel-indicators .active {
+    background-color: #11ade6;
+}
+
+@media (max-width:480px) {
+    #sliderSection .carousel-inner .carousel-caption {
+        width: 70% !important;
+    }
+}
+
+#sliderSection .carousel-inner .carousel-caption h1 {
+    color: white;
+}
+
+@media (max-width:480px) {
+    #sliderSection .carousel-inner .carousel-caption h1 {
+        font-size: 30px;
+        color: white;
+    }
+}
+
+/*properties section*/
+#propertySection .row .col .darkHover {
+    width: 90%;
+}
+
+#propertySection .col img {
+    position: relative;
+    z-index: 1;
+}
+
+#propertySection .darkHover:hover .propertyHover {
+    transition: 0.4s;
+    transform: translate(20px);
+    position: absolute;
+    background: black;
+    width: 315px;
+    height: 565px;
+    top: 25px;
+}
+
+#propertySection .darkHover:hover .propertytitle {
+    position: absolute;
+    bottom: 3px;
+    margin-left: 10px;
+}
+
+#propertySection .darkHover:hover .propertytitle h4 {
+    transition: 0.4s;
+    color: white;
+    margin-left: 15px;
+}
+
+#propertySection .darkHover:hover .propertytitle h5 {
+    transition: 0.4s;
+    color: white;
+    margin-left: 15px;
+}
+
+
+/*agents section*/
+#agentSection .row .social {
+    background: black;
+    padding: 10px;
+    position: absolute;
+    width: 350px;
+    transition: 0.3s;
+    z-index: -1;
+    top: 330px;
+}
+
+#agentSection .row ul.socialIcon {
+    margin: auto;
+    width: 55%;
+}
+
+#agentSection .row ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#agentSection .row ul li a {
+    color: white;
+}
+
+#agentSection .row .team-member .teamInfo {
+    overflow: hidden;
+}
+
+#agentSection .row .team-member:hover .social {
+    transform: translateY(-24px);
+    z-index: 1;
+}
+
+/*work section*/
+#workSection .row i {
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+/*service section*/
+#serviceSection .row i {
+    font-size: 30px;
+    color: #39f;
+}
+
+/*news section*/
+#newsSection .row h5 {
+    font-size: 17px;
+}
+
+/*========================*/
+/*FOOTER SECTIION*/
+/*========================*/
+#footerSection .topIcon {
+    margin-bottom: 20px;
+}
+
+#footerSection .topIcon a i {
+    background: #19ced7;
+    padding: 2px 13px;
+    color: white;
+    font-size: 40px;
+    position: fixed;
+    bottom: 27px;
+    right: 20px;
+}
